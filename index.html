@@ -7,24 +7,69 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-  <div class="container mx-auto py-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="https://via.placeholder.com/300" alt="Imagen 1" class="w-full h-48 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Título de la tarjeta 1</h3>
-        <p class="mt-2">Descripción de la tarjeta 1.</p>
-      </div>
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="https://via.placeholder.com/300" alt="Imagen 2" class="w-full h-48 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Título de la tarjeta 2</h3>
-        <p class="mt-2">Descripción de la tarjeta 2.</p>
-      </div>
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <img src="https://via.placeholder.com/300" alt="Imagen 3" class="w-full h-48 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Título de la tarjeta 3</h3>
-        <p class="mt-2">Descripción de la tarjeta 3.</p>
+  <style>
+    .card {
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+      bottom: 0;
+      left: 13%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 8px;
+      border-top-right-radius: 8px;
+    }
+
+  </style>
+
+  <div class="container mx-auto">
+    <div class="relative isolate overflow-hidden py-24 sm:py-32">
+      
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-4xl font-bold tracking-tight text-dark sm:text-6xl">Trabajos</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-500">Trabajos realizados en la clase de Sistemas Operativos, cada trabajo tiene su propio enlace a un PDF o a donde corresponda</p>
+        </div>
+        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <h4 class="text-xl font-bold tracking-tight text-dark sm:text-2xl">Primer corte</h4>
+          <div class="container mx-auto py-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <a href="enlace-1.html" class="block">
+              <div class="bg-white rounded-lg shadow-md p-6 card">
+                <img src="https://via.placeholder.com/300" alt="Imagen 1" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Ciclo de vida del Software</h3>
+                <p class="mt-2">Crear una idea de un sistema informatico e implementar(de manera conceptual) los pasos en el ciclo de vida del software</p>
+              </div>
+              </a>
+              <a href="enlace-1.html" class="block">
+              <div class="bg-white rounded-lg shadow-md p-6 card">
+                <img src="https://via.placeholder.com/300" alt="Imagen 2" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Título de la tarjeta 2</h3>
+                <p class="mt-2">Descripción de la tarjeta 2.</p>
+              </div>
+            </a>
+            <a href="enlace-1.html" class="block">
+              <div class="bg-white rounded-lg shadow-md p-6 card">
+                <img src="https://via.placeholder.com/300" alt="Imagen 3" class="w-full h-48 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Título de la tarjeta 3</h3>
+                <p class="mt-2">Descripción de la tarjeta 3.</p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    
   </div>
+
+  <div class="footer">
+    <p class="text-md leading-8 text-gray-400 ">Diseñado por <a href="https://github.com/deiby1523" target="_blank" class="text-gray-500 underline">Deiby Prada</a></p>
+  </div>
+
 </body>
 </html>
